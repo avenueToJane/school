@@ -4,7 +4,7 @@
 <mapper namespace="com.westlife.demo.mapper.SchoolMapper">
 	<select id="selectAll" resultType="com.westlife.demo.model.School">
 	
-	    SELECT * from school ORDER BY place DESC
+	    SELECT * from school ORDER by id 
 	    
 	</select>
 </mapper>
