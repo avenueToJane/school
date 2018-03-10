@@ -1,0 +1,427 @@
+2018-03-10 16:45:43.763 ERROR 17240 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG   for 'org.springframework.web'
+2018-03-10 16:45:43.767 ERROR 17240 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO   for 'null'
+2018-03-10 16:45:43.866  INFO 17240 --- [main] com.westlife.demo.Application            : Starting Application on LAPTOP-NQRD58OA with PID 17240 (started by 28953 in F:\ IDcard\com.school)
+2018-03-10 16:45:43.866  INFO 17240 --- [main] com.westlife.demo.Application            : No active profile set, falling back to default profiles: default
+2018-03-10 16:45:43.942  INFO 17240 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Sat Mar 10 16:45:43 CST 2018]; root of context hierarchy
+2018-03-10 16:45:45.844  INFO 17240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-10 16:45:46.512  INFO 17240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 16:45:46.659  INFO 17240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 16:45:46.845  INFO 17240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3057f9b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 16:45:47.261  INFO 17240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.westlife.demo.service.RedisConfig$$EnhancerBySpringCGLIB$$fdca6c6a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 16:45:47.284  INFO 17240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'keyGenerator' of type [class com.westlife.demo.service.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 16:45:47.285  INFO 17240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$796a2fd4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 16:45:48.269  INFO 17240 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-03-10 16:45:48.284  INFO 17240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-10 16:45:48.285  INFO 17240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.24
+2018-03-10 16:45:48.763  INFO 17240 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-03-10 16:45:48.776  INFO 17240 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-10 16:45:48.777  INFO 17240 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4838 ms
+2018-03-10 16:45:49.072  INFO 17240 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-10 16:45:49.080  INFO 17240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2018-03-10 16:45:49.082  INFO 17240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-10 16:45:49.082  INFO 17240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-10 16:45:49.082  INFO 17240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-10 16:45:49.082  INFO 17240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-10 16:45:50.856  INFO 17240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.westlife.demo.controller.SchoolController.index()
+2018-03-10 16:45:50.857  INFO 17240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/query]}" onto public java.lang.String com.westlife.demo.controller.SchoolController.queryAll(org.springframework.ui.Model)
+2018-03-10 16:45:50.858  INFO 17240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-03-10 16:45:50.861  INFO 17240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-03-10 16:45:50.861  INFO 17240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-03-10 16:45:50.862  INFO 17240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-03-10 16:45:50.865  INFO 17240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-10 16:45:50.866  INFO 17240 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-10 16:45:51.399  INFO 17240 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Sat Mar 10 16:45:43 CST 2018]; root of context hierarchy
+2018-03-10 16:45:51.509  INFO 17240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 16:45:51.511  INFO 17240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 16:45:51.585  INFO 17240 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 16:45:52.246  INFO 17240 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-10 16:45:52.249  INFO 17240 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'readDataSource' has been autodetected for JMX exposure
+2018-03-10 16:45:52.256  INFO 17240 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'readDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=readDataSource,type=DruidDataSource]
+2018-03-10 16:45:52.275  INFO 17240 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-03-10 16:45:52.301  INFO 17240 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-03-10 16:45:52.319  INFO 17240 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-03-10 16:45:52.324  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.326  INFO 17240 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: index belongs to groups: [[ResourceGroup{groupName='school-controller', position=0, controller=com.westlife.demo.controller.SchoolController}]] 
+2018-03-10 16:45:52.327  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.327  INFO 17240 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: queryAll belongs to groups: [[ResourceGroup{groupName='school-controller', position=0, controller=com.westlife.demo.controller.SchoolController}]] 
+2018-03-10 16:45:52.330  INFO 17240 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/school-controller Description: school-controller Position: 0
+2018-03-10 16:45:52.359  INFO 17240 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-10 16:45:52.360  INFO 17240 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-03-10 16:45:52.368  INFO 17240 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-10 16:45:52.368  INFO 17240 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-03-10 16:45:52.384  INFO 17240 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /.com.westlife.demo.controller.SchoolController.index.DefaultGenericTypeNamingStrategy
+2018-03-10 16:45:52.384  INFO 17240 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /.com.westlife.demo.controller.SchoolController.index.DefaultGenericTypeNamingStrategy
+2018-03-10 16:45:52.394  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.397  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.401  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.409  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.412  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.414  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.418  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.420  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.421  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.421  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.426  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.428  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.429  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.436  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.442  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.442  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:45:52.455  INFO 17240 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-10 16:45:52.455  INFO 17240 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-03-10 16:45:52.456  INFO 17240 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-10 16:45:52.456  INFO 17240 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-03-10 16:45:52.456  INFO 17240 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /query.com.westlife.demo.controller.SchoolController.queryAll.DefaultGenericTypeNamingStrategy
+2018-03-10 16:45:52.456  INFO 17240 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /query.com.westlife.demo.controller.SchoolController.queryAll.DefaultGenericTypeNamingStrategy
+2018-03-10 16:45:52.465  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.466  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.467  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.468  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.471  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.476  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.478  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.479  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.481  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.483  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.484  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.485  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.486  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.487  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.488  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.489  INFO 17240 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:45:52.616  INFO 17240 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-03-10 16:45:52.621  INFO 17240 --- [main] com.westlife.demo.LoadDataService        : ************************启动时加载数据(schoolList数据)**********************》》》》》》》》
+2018-03-10 16:45:52.693  INFO 17240 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-10 16:45:53.084  INFO 17240 --- [main] com.westlife.demo.LoadDataService        : ************************结束加载数据(schoolList数据)**********************》》》》》》》》
+2018-03-10 16:45:53.085  INFO 17240 --- [main] com.westlife.demo.Application            : Started Application in 9.655 seconds (JVM running for 10.267)
+2018-03-10 16:45:53.085  INFO 17240 --- [main] com.westlife.demo.Application            : SpringBoot加载完毕
+2018-03-10 16:47:07.021  INFO 17240 --- [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-10 16:47:07.022  INFO 17240 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-10 16:47:07.056  INFO 17240 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-03-10 16:47:07.157 ERROR 17240 --- [http-nio-8081-exec-3] o.s.boot.web.support.ErrorPageFilter     : Cannot forward to error page for request [/] as the response has already been committed. As a result, the response may have the wrong status code. If your application is running on WebSphere Application Server you may be able to resolve this problem by setting com.ibm.ws.webcontainer.invokeFlushAfterService to false
+2018-03-10 16:48:47.048 ERROR 7472 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG   for 'org.springframework.web'
+2018-03-10 16:48:47.050 ERROR 7472 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO   for 'null'
+2018-03-10 16:48:47.151  INFO 7472 --- [main] com.westlife.demo.Application            : Starting Application on LAPTOP-NQRD58OA with PID 7472 (started by 28953 in F:\ IDcard\com.school)
+2018-03-10 16:48:47.151  INFO 7472 --- [main] com.westlife.demo.Application            : No active profile set, falling back to default profiles: default
+2018-03-10 16:48:47.246  INFO 7472 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Sat Mar 10 16:48:47 CST 2018]; root of context hierarchy
+2018-03-10 16:48:48.950  INFO 7472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-10 16:48:49.679  INFO 7472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 16:48:49.821  INFO 7472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 16:48:49.995  INFO 7472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d123d91d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 16:48:50.281  INFO 7472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.westlife.demo.service.RedisConfig$$EnhancerBySpringCGLIB$$9e964bd1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 16:48:50.305  INFO 7472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'keyGenerator' of type [class com.westlife.demo.service.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 16:48:50.307  INFO 7472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$1a360f3b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 16:48:51.028  INFO 7472 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-03-10 16:48:51.046  INFO 7472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-10 16:48:51.048  INFO 7472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.24
+2018-03-10 16:48:51.552  INFO 7472 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-03-10 16:48:51.558  INFO 7472 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-10 16:48:51.559  INFO 7472 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4318 ms
+2018-03-10 16:48:51.877  INFO 7472 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-10 16:48:51.882  INFO 7472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2018-03-10 16:48:51.884  INFO 7472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-10 16:48:51.886  INFO 7472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-10 16:48:51.887  INFO 7472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-10 16:48:51.887  INFO 7472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-10 16:48:54.012  INFO 7472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.westlife.demo.controller.SchoolController.index()
+2018-03-10 16:48:54.014  INFO 7472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/query]}" onto public java.lang.String com.westlife.demo.controller.SchoolController.queryAll(org.springframework.ui.Model)
+2018-03-10 16:48:54.015  INFO 7472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-03-10 16:48:54.020  INFO 7472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-03-10 16:48:54.020  INFO 7472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-03-10 16:48:54.021  INFO 7472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-03-10 16:48:54.026  INFO 7472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-10 16:48:54.026  INFO 7472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-10 16:48:54.541  INFO 7472 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Sat Mar 10 16:48:47 CST 2018]; root of context hierarchy
+2018-03-10 16:48:54.712  INFO 7472 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 16:48:54.712  INFO 7472 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 16:48:54.810  INFO 7472 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 16:48:55.460  INFO 7472 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-10 16:48:55.462  INFO 7472 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'readDataSource' has been autodetected for JMX exposure
+2018-03-10 16:48:55.470  INFO 7472 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'readDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=readDataSource,type=DruidDataSource]
+2018-03-10 16:48:55.494  INFO 7472 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-03-10 16:48:55.531  INFO 7472 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-03-10 16:48:55.541  INFO 7472 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-03-10 16:48:55.545  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.548  INFO 7472 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: index belongs to groups: [[ResourceGroup{groupName='school-controller', position=0, controller=com.westlife.demo.controller.SchoolController}]] 
+2018-03-10 16:48:55.555  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.555  INFO 7472 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: queryAll belongs to groups: [[ResourceGroup{groupName='school-controller', position=0, controller=com.westlife.demo.controller.SchoolController}]] 
+2018-03-10 16:48:55.560  INFO 7472 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/school-controller Description: school-controller Position: 0
+2018-03-10 16:48:55.580  INFO 7472 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-10 16:48:55.580  INFO 7472 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-03-10 16:48:55.598  INFO 7472 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-10 16:48:55.599  INFO 7472 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-03-10 16:48:55.608  INFO 7472 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /.com.westlife.demo.controller.SchoolController.index.DefaultGenericTypeNamingStrategy
+2018-03-10 16:48:55.609  INFO 7472 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /.com.westlife.demo.controller.SchoolController.index.DefaultGenericTypeNamingStrategy
+2018-03-10 16:48:55.627  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.631  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.637  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.638  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.639  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.640  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.641  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.641  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.642  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.643  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.643  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.644  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.645  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.645  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.646  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.647  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was school-controller
+2018-03-10 16:48:55.659  INFO 7472 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-10 16:48:55.659  INFO 7472 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-03-10 16:48:55.659  INFO 7472 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-10 16:48:55.660  INFO 7472 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-03-10 16:48:55.660  INFO 7472 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /query.com.westlife.demo.controller.SchoolController.queryAll.DefaultGenericTypeNamingStrategy
+2018-03-10 16:48:55.660  INFO 7472 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /query.com.westlife.demo.controller.SchoolController.queryAll.DefaultGenericTypeNamingStrategy
+2018-03-10 16:48:55.671  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.671  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.673  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.674  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.675  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.676  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.678  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.679  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.690  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.693  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.695  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.696  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.699  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.701  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.704  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.706  INFO 7472 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was school-controller
+2018-03-10 16:48:55.846  INFO 7472 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-03-10 16:48:55.858  INFO 7472 --- [main] com.westlife.demo.LoadDataService        : ************************启动时加载数据(schoolList数据)**********************》》》》》》》》
+2018-03-10 16:48:55.934  INFO 7472 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-10 16:48:56.394  INFO 7472 --- [main] com.westlife.demo.LoadDataService        : ************************结束加载数据(schoolList数据)**********************》》》》》》》》
+2018-03-10 16:48:56.395  INFO 7472 --- [main] com.westlife.demo.Application            : Started Application in 9.643 seconds (JVM running for 10.245)
+2018-03-10 16:48:56.396  INFO 7472 --- [main] com.westlife.demo.Application            : SpringBoot加载完毕
+2018-03-10 16:49:05.574  INFO 7472 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-10 16:49:05.574  INFO 7472 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-10 16:49:05.609  INFO 7472 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2018-03-10 16:54:41.974 ERROR 7472 --- [http-nio-8081-exec-5] o.a.c.c.C.[.[localhost].[/].[jsp]        : Servlet.service() for servlet [jsp] threw exception
+
+javax.el.PropertyNotFoundException: Property [provinceid] not found on type [com.westlife.demo.model.School]
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:260) ~[el-api.jar:3.0.FR]
+	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:212) ~[el-api.jar:3.0.FR]
+	at javax.el.BeanELResolver.property(BeanELResolver.java:347) ~[el-api.jar:3.0.FR]
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:92) ~[el-api.jar:3.0.FR]
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:110) ~[jasper.jar:8.5.24]
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:169) ~[jasper-el.jar:8.5.24]
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184) ~[jasper-el.jar:8.5.24]
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:944) ~[jasper.jar:8.5.24]
+	at org.apache.jsp.WEB_002dINF.view.list_jsp._jspx_meth_c_005fforEach_005f0(list_jsp.java:286) ~[na:na]
+	at org.apache.jsp.WEB_002dINF.view.list_jsp._jspService(list_jsp.java:188) ~[na:na]
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70) ~[jasper.jar:8.5.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [servlet-api.jar:na]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443) ~[jasper.jar:8.5.24]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386) ~[jasper.jar:8.5.24]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330) ~[jasper.jar:8.5.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.web.support.ErrorPageFilter.doFilter(ErrorPageFilter.java:108) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:470) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:395) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316) [catalina.jar:8.5.24]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) [spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) [spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1271) [spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) [spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) [spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [servlet-api.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.boot.web.support.ErrorPageFilter.doFilter(ErrorPageFilter.java:115) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.web.support.ErrorPageFilter.access$000(ErrorPageFilter.java:59) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.web.support.ErrorPageFilter$1.doFilterInternal(ErrorPageFilter.java:90) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.web.support.ErrorPageFilter.doFilter(ErrorPageFilter.java:108) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [catalina.jar:8.5.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [catalina.jar:8.5.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-coyote.jar:8.5.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-coyote.jar:8.5.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-coyote.jar:8.5.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.24]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.24]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+
+2018-03-10 16:54:41.979 ERROR 7472 --- [http-nio-8081-exec-5] o.s.boot.web.support.ErrorPageFilter     : Forwarding to error page from request [/query] due to exception [An exception occurred processing JSP page [/WEB-INF/view/list.jsp] at line [61]
+
+58: 
+59: 			<c:forEach items="${schoolList}" var="school" varStatus="s">
+60: 			rows.push({
+61: 				name : "${school.provinceid}",
+62: 				place : "${school.province}",
+63: 				type : "${school.cityid}",
+64: 				properties : "${school.city}",
+
+
+Stacktrace:]
+
+org.apache.jasper.JasperException: An exception occurred processing JSP page [/WEB-INF/view/list.jsp] at line [61]
+
+58: 
+59: 			<c:forEach items="${schoolList}" var="school" varStatus="s">
+60: 			rows.push({
+61: 				name : "${school.provinceid}",
+62: 				place : "${school.province}",
+63: 				type : "${school.cityid}",
+64: 				properties : "${school.city}",
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:584) ~[jasper.jar:8.5.24]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:481) ~[jasper.jar:8.5.24]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386) ~[jasper.jar:8.5.24]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330) ~[jasper.jar:8.5.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-websocket.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.web.support.ErrorPageFilter.doFilter(ErrorPageFilter.java:108) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) ~[catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:470) ~[catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:395) ~[catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316) ~[catalina.jar:8.5.24]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1271) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[servlet-api.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-websocket.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.springframework.boot.web.support.ErrorPageFilter.doFilter(ErrorPageFilter.java:115) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.web.support.ErrorPageFilter.access$000(ErrorPageFilter.java:59) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.web.support.ErrorPageFilter$1.doFilterInternal(ErrorPageFilter.java:90) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.web.support.ErrorPageFilter.doFilter(ErrorPageFilter.java:108) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [catalina.jar:8.5.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [catalina.jar:8.5.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [catalina.jar:8.5.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-coyote.jar:8.5.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-coyote.jar:8.5.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-coyote.jar:8.5.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.24]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.24]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: javax.el.PropertyNotFoundException: Property [provinceid] not found on type [com.westlife.demo.model.School]
+	at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:260) ~[el-api.jar:3.0.FR]
+	at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:212) ~[el-api.jar:3.0.FR]
+	at javax.el.BeanELResolver.property(BeanELResolver.java:347) ~[el-api.jar:3.0.FR]
+	at javax.el.BeanELResolver.getValue(BeanELResolver.java:92) ~[el-api.jar:3.0.FR]
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:110) ~[jasper.jar:8.5.24]
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:169) ~[jasper-el.jar:8.5.24]
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184) ~[jasper-el.jar:8.5.24]
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:944) ~[jasper.jar:8.5.24]
+	at org.apache.jsp.WEB_002dINF.view.list_jsp._jspx_meth_c_005fforEach_005f0(list_jsp.java:286) ~[na:na]
+	at org.apache.jsp.WEB_002dINF.view.list_jsp._jspService(list_jsp.java:188) ~[na:na]
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70) ~[jasper.jar:8.5.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[servlet-api.jar:na]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443) ~[jasper.jar:8.5.24]
+	... 83 common frames omitted
+
